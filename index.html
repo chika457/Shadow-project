@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website HTML</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <section id="main">
+      <nav class="navigation">
+        <a href="#" class="logo">
+          <img src="imgaes/logo.png" alt="logo" />
+        </a>
+      </nav>
+
+      <div class="main-slider">
+        <!-- Swiper -->
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+
+            <div class="swiper-slide">
+              <div class="main-slider-box">
+                <img src="imgaes/1.png" alt="1" />
+                <div class="main-slider-text">
+                  <strong>Samurai</strong>
+                  <h4>ave.</h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="main-slider-box">
+                <img src="imgaes/2.png" alt="1" />
+                <div class="main-slider-text">
+                  <strong>Miirowss</strong>
+                  <h4>xxl.</h4>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="main-slider-box">
+                <img src="imgaes/3.png" alt="1" />
+                <div class="main-slider-text">
+                  <strong>Erika</strong>
+                  <h4>qzs.</h4>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+
+
+      <div class="slider-btns">
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+
+
+    </section>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        direction:"vertical",
+        pagination: {
+          el: ".swiper-pagination",
+          type: "progressbar",
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        autoplay: {
+          delay: 4000,
+          disableOnInteraction: false,
+        },
+        navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>
